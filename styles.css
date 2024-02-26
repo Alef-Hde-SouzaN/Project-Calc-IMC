@@ -90,6 +90,7 @@ body {
     margin: 2rem; /* Adicionando margem externa */
     min-width: 470px; /* Definindo a largura mínima */
     text-align: justify; /* Justificando o texto */
+    max-width: 600px;
 
     font-weight: bold; /* Definindo o peso da fonte */
 
@@ -264,11 +265,66 @@ footer{
     text-shadow: 4px 4px 8px #000; /* Adicionando sombra ao contorno das letras */
 }
 
-/* @media para telas menores, como dispositivos móveis */
-
-
-@media only screen and (min-width: 600px) {
-    .container {
-        max-width: 600px;
+@media(max-width: 1280px){
+    .container-text, .container {
+        width: 70%; /* Reduzindo a largura dos contêineres para telas menores */
+        min-width: auto; /* Removendo a largura mínima */
     }
 }
+
+@media(max-width: 768px){
+    .container-text, .container {
+        width: 90%; /* Reduzindo ainda mais a largura dos contêineres para telas muito menores */
+    }
+}
+
+@media(max-width: 480px){
+    .container-text, .container {
+        width: 100%; /* Utilizando a largura total para telas muito pequenas */
+        margin: 1rem; /* Ajustando a margem para evitar sobreposição em telas estreitas */
+    }
+}
+
+@media(max-width: 300px){
+    .container-text, .container {
+        width: 100%; /* Utilizando a largura total para telas extremamente pequenas */
+        margin: 1rem; /* Ajustando a margem para evitar sobreposição em telas estreitas */
+    }
+
+    .container-text h1, 
+    .container-text h3, 
+    .container-text p {
+        margin: 0.5rem 1rem; /* Ajustando a margem interna dos elementos de texto */
+    }
+}
+
+@media(max-width: 200px){
+    .container-text, .container {
+        width: 100%; /* Utilizando a largura total para telas extremamente pequenas */
+        margin: 0.5rem; /* Ajustando a margem ainda mais para evitar sobreposição em telas muito estreitas */
+    }
+
+    .container-text h1, 
+    .container-text h3, 
+    .container-text p {
+        margin: 0.3rem 0.5rem; /* Ajustando ainda mais a margem interna dos elementos de texto */
+        font-size: 1.4rem; /* Reduzindo o tamanho da fonte para melhorar a legibilidade */
+    }
+}
+
+/* Ajustes para o rodapé */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column; /* Organizando os itens em coluna */
+        align-items: center; /* Centralizando os itens horizontalmente */
+        text-align: center; /* Centralizando o texto */
+    }
+
+    .footer {
+        font-size: 1.6rem; /* Reduzindo o tamanho da fonte */
+    }
+}
+
+
+
+
