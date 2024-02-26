@@ -83,13 +83,16 @@ body {
 
 /* Estilo do contêiner principal à esquerda */
 .container {
+    display: flex; /* Usando flexbox para organizar os elementos */
+    flex-direction: column; /* Definindo a direção da flexbox como coluna */
     width: 50%; /* Definindo a largura do contêiner */
-    height: 75rem; /* Definindo a altura do contêiner */
-    min-width: 400px; /* Definindo a largura mínima do contêiner */
-    min-height: 400px; /* Definindo a altura mínima do contêiner */
     padding: 2rem; /* Adicionando preenchimento interno */
-    margin-left: 8rem; /* Adicionando margem esquerda */
+    margin: 2rem; /* Adicionando margem externa */
+    min-width: 470px; /* Definindo a largura mínima */
+    text-align: justify; /* Justificando o texto */
+
     font-weight: bold; /* Definindo o peso da fonte */
+
         background: rgba(255, 255, 255, 0.2); /* Definindo a cor de fundo com transparência */
         border-radius: 16px; /* Arredondando as bordas */
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Adicionando uma sombra */
@@ -261,9 +264,11 @@ footer{
     text-shadow: 4px 4px 8px #000; /* Adicionando sombra ao contorno das letras */
 }
 
-/* Estilos específicos para telas menores (responsividade) */
+/* @media para telas menores, como dispositivos móveis */
+
+
 @media only screen and (min-width: 600px) {
     .container {
-        max-width: 600px; /* Ajustando a largura máxima do contêiner para telas maiores */
+        max-width: 600px;
     }
 }
