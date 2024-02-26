@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento HTML -->
+<html lang="pt-br"> <!-- Declaração do idioma da página -->
+<head>
+    <meta charset="UTF-8"> <!-- Definição do conjunto de caracteres como UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Especificação para compatibilidade com o Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuração de viewport para dispositivos móveis -->
+    <link rel="stylesheet" href="./styles.css"> <!-- Importação do arquivo de estilos CSS -->
+    <title>Calculadora IMC</title> <!-- Título da página -->
+</head>
+<body>
+    <div class="container-text">
+        <h1>Cálculo IMC</h1>
+        
+        <h3>O que é o IMC?</h3>
+        <p><strong>IMC é a sigla para <u>Índice de Massa Corpórea</u></strong>, parâmetro adotado pela <a href="https://www.who.int/data/gho/data/themes/topics/topic-details/GHO/body-mass-index" target="_blank">Organização Mundial de Saúde</a> para calcular o peso ideal de cada pessoa.</p>
+        <hr>
+        <h3>Como calcular o IMC?</h3>
+        <p> É calculado dividindo o peso (em kg) pela altura ao quadrado (em metros). <br> Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre <strong>18,5 e 24,9.</p> </strong>
+  
+         <hr>
+       <h3>Por que calcular o IMC?</h3>
+       <p>Para identificar a porcentagem de gordura corporal em uma pessoa. Quanto maior o número, maior o risco de desenvolver problemas de saúde, tais como doenças cardíacas e diabetes.</p>
+       <p>
+         Serve para fornecem um indicador de se uma pessoa está acima do peso, obesa ou abaixo do peso. Esta informação pode ser usada para avaliar fatores de risco para certas condições e doenças. O sistema IMC é utilizado por médicos, funcionários da saúde pública e outros que se preocupam com a saúde de indivíduos ou populações. Serve para manter o público informado sobre sua saúde. </p>
+         <hr>
+         <h3>Quais os riscos de se ter o IMC maior?</h3>
+         <p>As pessoas obesas e com excesso de peso têm uma maior probabilidade de sofrer ataques cardíacos e AVC. A perda de peso reduz o risco de morte causada por doença cardíaca. Também ajuda a prevenir ou controlar a diabetes, a pressão alta e o colesterol alto e contribui para evitar doenças cardiovasculares. A perda de peso pode ser alcançada comendo menos e sendo mais ativo. </p>
+         
+    </div>
+
+    <div class="container">
+        <h1>Calculadora IMC</h1> <!-- Título principal da página -->
+        <div class="input">
+            <label>Nome</label> <!-- Etiqueta para o campo de entrada do nome -->
+            <input type="text" id="nome"> <!-- Campo de entrada para o nome -->
+            <!-- O ID é usado no JavaScript para manipulação -->
+        </div>
+        <div class="input">
+            <label>Altura</label> <!-- Etiqueta para o campo de entrada da altura -->
+            <input type="number" id="altura"> <!-- Campo de entrada para a altura -->
+            <!-- O ID é usado no JavaScript para manipulação -->
+        </div>
+        <div class="input">
+            <label>Peso</label> <!-- Etiqueta para o campo de entrada do peso -->
+            <input type="number" id="peso"> <!-- Campo de entrada para o peso -->
+            <!-- O ID é usado no JavaScript para manipulação -->
+        </div>
+
+        <div class="container-button">
+            <button id="button">Calcular IMC</button> <!-- Botão para acionar o cálculo do IMC -->
+            <button id="limparDados">Limpar Dados</button>
+        </div>
+
+        <div id="resultado"></div> <!-- Div para exibir o resultado do cálculo do IMC -->
+
+        <!-- Tecnologias -->
+        <div class="divider"></div>
+        <div class="icons-container">
+            <img class="icon-item" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"/>
+            <img class="icon-item" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"/>
+            <img class="icon-item" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"/>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <span class="footer">Todos os direitos reservados ©</span>
+        <span class="footer">
+            Desenvolvido por: 
+            <a class="footer" href="https://github.com/Alef-Hde-SouzaN" target="_blank">Alef H. de Souza Nascimento</a>
+        </span>
+    </footer>
+
+    <script src="./script.js"></script> <!-- Importação do arquivo de script JavaScript -->
+</body>
+</html>
