@@ -3,17 +3,17 @@ Projeto Calculadora IMC - Desenvolvido e melhorado após modulo JS do curso Prof
 
 Tecnologias:
 
-# HTML
-# CSS
-# JavaScript
+- HTML
+- CSS
+- JavaScript
 
 Praticando conceitos como:
 
-# Containers e formulários
-# Tipos de Inputs
-# Metodos de estilização
-# Criação de novos metodos dentro do CSS para ser usado no JS
-# DOM no JS
-# Aplicação de Const e Arrow Function
-# Praticando documentação e padronização de código limpo
+- Containers e formulários
+- Tipos de Inputs
+- Metodos de estilização
+- Criação de novos metodos dentro do CSS para ser usado no JS
+- DOM no JS
+- Aplicação de Const e Arrow Function
+- Praticando documentação e padronização de código limpo
 
